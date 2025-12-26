@@ -105,7 +105,22 @@ button {
 
     <h1>Make a Wish 🎂</h1>
 
-    <div class="cake">
+    <div id="cake-area" style="text-align:center; padding:20px;">
+  <div id="cake" style="font-size:80px;">
+    🎂🕯️🕯️🕯️
+  </div>
+  <button onclick="blowCandles()" style="
+    margin-top:15px;
+    padding:12px 25px;
+    font-size:16px;
+    border:none;
+    border-radius:25px;
+    background:#ff4d6d;
+    color:white;
+  ">
+    Blow the Candles 💨
+  </button>
+    </div>
         <div class="candle">
             <div class="flame" id="flame"></div>
         </div>
@@ -145,5 +160,16 @@ function blow() {
 }
 </script>
 
-</body>
+<script>
+function blowCandles() {
+  document.getElementById("cake").innerHTML = "🎂";
+  document.getElementById("message").style.display = "block";
+
+  const music = document.getElementById("bg-music");
+  if (music) {
+    music.play().catch(()=>{});
+  }
+}
+</script></body>
+
 </html>
