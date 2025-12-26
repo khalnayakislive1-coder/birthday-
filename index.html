@@ -5,7 +5,17 @@
 <title>Happy Birthday My Love</title>
 
 <style>
-body {
+body {<button onclick="playMusic()" style="
+  margin-top:10px;
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  background:#ff4d6d;
+  color:white;
+  font-size:14px;
+">
+  ▶️ Play Music
+</button>
     margin: 0;
     height: 100vh;
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
@@ -95,8 +105,8 @@ button {
 
 <body>
 
-<audio id="bgMusic" autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <div class="card">
@@ -173,3 +183,4 @@ function blowCandles() {
 </script></body>
 
 </html>
+
